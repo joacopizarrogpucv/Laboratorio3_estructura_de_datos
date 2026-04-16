@@ -91,7 +91,9 @@ Pair * searchMap(HashMap * map,  char * key) {
         if (pos == map->capacity){
             pos = -1;
         }
-        if (map->buckets[pos]->key == NULL) return NULL;
+        if (map->buckets[pos]->key == NULL){
+            return NULL;
+        }
     }
     
     Pair * parEncontrado = map->buckets[pos];
