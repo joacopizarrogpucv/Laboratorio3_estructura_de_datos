@@ -306,3 +306,14 @@ Thu Apr 16 08:50:42 PM UTC 2026:
  tests:  5|5
 total_score: 15/60
 2fd09fb
+Thu Apr 16 08:54:53 PM UTC 2026: 
+ hashmap.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:99:16: error: ‘parEncontrado’ undeclared (first use in this function)
+   99 |         return parEncontrado;
+      |                ^~~~~~~~~~~~~
+hashmap.c:99:16: note: each undeclared identifier is reported only once for each function it appears in
+b514012
