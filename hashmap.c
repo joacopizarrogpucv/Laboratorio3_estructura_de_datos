@@ -70,7 +70,7 @@ void insertMap(HashMap * map, char * key, void * value) {
         }
     }
 
-    if(map->bucket[pos]->key == NULL){
+    if(map->buckets[pos]->key == NULL){
         map->buckets[pos] = nuevoPar;
         return;
     }
