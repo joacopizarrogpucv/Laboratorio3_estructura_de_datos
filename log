@@ -269,3 +269,9 @@ hashmap.c:88:12: note: previous definition of ‘parEncontrado’ with type ‘P
    88 |     Pair * parEncontrado = map->buckets[pos];
       |            ^~~~~~~~~~~~~
 128c325
+Thu Apr 16 08:48:35 PM UTC 2026: 
+ hashmap.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+ tests:  4|5
+total_score: 15/60
+67e949c

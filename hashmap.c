@@ -93,12 +93,11 @@ Pair * searchMap(HashMap * map,  char * key) {
         if (pos == map->capacity){
             pos = -1;
         }
-        if (map->buckets[pos] == NULL){
-            return NULL;
-        }
     }
-    
-    Pair * parEncontrado = map->buckets[pos];
+    if (map->buckets[pos] == NULL){
+        return NULL;
+    }
+
     map->current = pos;
     return parEncontrado;
 }
