@@ -173,3 +173,14 @@ Thu Apr 16 08:34:57 PM UTC 2026:
  tests:  3|6
 total_score: 5/60
 1c18dbc
+Thu Apr 16 08:36:11 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:69:13: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   69 |         if (pos = map->capacity){
+      |             ^~~
+cc1: all warnings being treated as errors
+668e09f
