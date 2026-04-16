@@ -287,3 +287,16 @@ Thu Apr 16 08:49:11 PM UTC 2026:
  tests:  5|5
 total_score: 15/60
 df003c1
+Thu Apr 16 08:50:34 PM UTC 2026: 
+ hashmap.c | 8 +++++---
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:97:29: error: expected ‘;’ before ‘}’ token
+   97 |         return parEncontrado
+      |                             ^
+      |                             ;
+   98 |     }
+      |     ~                        
+ce06a88
