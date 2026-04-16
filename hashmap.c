@@ -101,7 +101,6 @@ Pair * searchMap(HashMap * map,  char * key) {
         }
     }
     
-    return NULL;
 }
 
 // 4. Implemente la función void eraseMap(HashMap * map, char * key). 
