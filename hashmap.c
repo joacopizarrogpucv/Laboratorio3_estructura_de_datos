@@ -60,9 +60,9 @@ HashMap * createMap(long capacity) {
 // No inserte claves repetidas. Recuerde que el arreglo es circular. Recuerde actualizar la variable size.
 
 void insertMap(HashMap * map, char * key, void * value) {
-    pos = hash(key, map->capacity);
+    long pos = hash(key, map->capacity);
 
-    Pair nuevoPar = createPair(key, value);
+    Pair * nuevoPar = createPair(key, value);
 
     map->buckets[pos] = nuevoPar;
     
