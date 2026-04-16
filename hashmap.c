@@ -68,7 +68,6 @@ void insertMap(HashMap * map, char * key, void * value) {
         map->buckets[pos] = nuevoPar;
         return;
     }
-    else return NULL;
 
 }
 
