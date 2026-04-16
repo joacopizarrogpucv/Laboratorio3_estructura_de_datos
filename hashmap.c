@@ -74,10 +74,6 @@ void insertMap(HashMap * map, char * key, void * value) {
     map->size++;
     map->buckets[pos] = nuevoPar;
 
-    if(map->buckets[pos]->key == NULL){
-        map->buckets[pos] = nuevoPar;
-        return;
-    }
 }
 
 // 3. Implemente la función Pair * searchMap(HashMap * map, char * key), la cual retorna el Pair asociado a la clave ingresada.
