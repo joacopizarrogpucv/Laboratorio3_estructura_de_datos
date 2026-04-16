@@ -256,3 +256,16 @@ Thu Apr 16 08:46:36 PM UTC 2026:
  tests:  5|5
 total_score: 15/60
 02b1933
+Thu Apr 16 08:47:28 PM UTC 2026: 
+ hashmap.c | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:101:12: error: redefinition of ‘parEncontrado’
+  101 |     Pair * parEncontrado = map->buckets[pos];
+      |            ^~~~~~~~~~~~~
+hashmap.c:88:12: note: previous definition of ‘parEncontrado’ with type ‘Pair *’
+   88 |     Pair * parEncontrado = map->buckets[pos];
+      |            ^~~~~~~~~~~~~
+128c325

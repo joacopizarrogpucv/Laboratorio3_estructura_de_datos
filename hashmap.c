@@ -88,7 +88,7 @@ Pair * searchMap(HashMap * map,  char * key) {
     Pair * parEncontrado = map->buckets[pos];
     map->current = pos;
     
-    /* while(map->buckets[pos]->key != key){
+    while(map->buckets[pos] != NULL){
         pos++;
         if (pos == map->capacity){
             pos = -1;
@@ -97,10 +97,9 @@ Pair * searchMap(HashMap * map,  char * key) {
             return NULL;
         }
     }
-    if (map->buckets[pos] == NULL){
-        return NULL;
-    } */
     
+    Pair * parEncontrado = map->buckets[pos];
+    map->current = pos;
     return parEncontrado;
 }
 
