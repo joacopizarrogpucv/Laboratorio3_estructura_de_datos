@@ -212,3 +212,14 @@ Thu Apr 16 08:43:05 PM UTC 2026:
  1 file changed, 2 insertions(+), 2 deletions(-)
  tests:  0|0
 43918a8
+Thu Apr 16 08:43:48 PM UTC 2026: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:94:17: error: comparison between pointer and integer [-Werror]
+   94 |         if (pos == NULL) return NULL;
+      |                 ^~
+cc1: all warnings being treated as errors
+db3442c
