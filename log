@@ -317,3 +317,9 @@ hashmap.c:99:16: error: ‘parEncontrado’ undeclared (first use in this functi
       |                ^~~~~~~~~~~~~
 hashmap.c:99:16: note: each undeclared identifier is reported only once for each function it appears in
 b514012
+Thu Apr 16 08:55:24 PM UTC 2026: 
+ hashmap.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  5|5
+total_score: 15/60
+69525c8
