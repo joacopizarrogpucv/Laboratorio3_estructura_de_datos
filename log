@@ -60,3 +60,18 @@ hashmap.c:65:21: error: invalid initializer
    65 |     Pair nuevoPar = createPair(key, value);
       |                     ^~~~~~~~~~
 5b60c54
+Thu Apr 16 08:21:11 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:63:5: error: ‘pos’ undeclared (first use in this function); did you mean ‘pow’?
+   63 |     pos = hash(key, map->capacity);
+      |     ^~~
+      |     pow
+hashmap.c:63:5: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:65:21: error: invalid initializer
+   65 |     Pair nuevoPar = createPair(key, value);
+      |                     ^~~~~~~~~~
+5ccfb3d
