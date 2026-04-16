@@ -140,3 +140,14 @@ Thu Apr 16 08:31:23 PM UTC 2026:
  tests:  3|6
 total_score: 5/60
 9e2ef1a
+Thu Apr 16 08:33:04 PM UTC 2026: 
+ hashmap.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:73:13: error: ‘HashMap’ {aka ‘struct HashMap’} has no member named ‘bucket’; did you mean ‘buckets’?
+   73 |     if(map->bucket[pos]->key == NULL){
+      |             ^~~~~~
+      |             buckets
+ddf30c2

@@ -69,6 +69,11 @@ void insertMap(HashMap * map, char * key, void * value) {
             pos = -1;
         }
     }
+
+    if(map->bucket[pos]->key == NULL){
+        map->buckets[pos] = nuevoPar;
+        return;
+    }
     map->size++;
     map->buckets[pos] = nuevoPar;
 }
