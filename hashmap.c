@@ -94,8 +94,7 @@ Pair * searchMap(HashMap * map,  char * key) {
             pos = -1;
         }
     }
-
-    map->current = pos;
+    
     return parEncontrado;
 }
 
