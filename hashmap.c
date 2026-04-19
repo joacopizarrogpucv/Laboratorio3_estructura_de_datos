@@ -176,7 +176,7 @@ void enlarge(HashMap * map) {
     map->capacity = map->capacity * 2;
     map->buckets = new_buckets;
     map->size = 0;
-    for(long pos; pos < map->capacity; pos++){
+    for(long pos = 0; pos < map->capacity; pos++){
         if(old_buckets[pos] != NULL){
             insertMap(map, old_buckets[pos]->key, old_buckets[pos]->value);
         }
