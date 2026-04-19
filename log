@@ -597,3 +597,9 @@ hashmap.c:180:62: error: ‘old_buckets’ is a pointer to pointer; did you mean
       |                                                              ^~
       |                                                   (*         )
 34b3a7b
+Sun Apr 19 11:32:18 PM UTC 2026: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  16|1
+total_score: 50/60
+7b546f4
