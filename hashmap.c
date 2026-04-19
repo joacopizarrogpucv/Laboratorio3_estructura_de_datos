@@ -171,7 +171,7 @@ Pair * nextMap(HashMap * map) {
 
 void enlarge(HashMap * map) {
     enlarge_called = 1; //no borrar (testing purposes)
-    Pair ** old_buckets  = map->buckets;
+    Pair** old_buckets  = map->buckets;
     map->capacity = map->capacity * 2;
     map->buckets = calloc(map->capacity * 2, sizeof(Pair));
     map->size = 0;
