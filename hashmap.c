@@ -135,6 +135,7 @@ Pair * firstMap(HashMap * map) {
     
     while(pos < map->capacity){
         if (map->buckets[pos] != NULL && map->buckets[pos]->key != NULL){
+            map->current = map->buckets[pos];
             return map->buckets[pos];
         }
         pos++;
