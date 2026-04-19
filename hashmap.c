@@ -11,7 +11,7 @@
 typedef struct HashMap HashMap;
 int enlarge_called=0;
 
-struct HashMap {
+struct HashMap {    
     Pair ** buckets;
     long size; //cantidad de datos/pairs en la tabla
     long capacity; //capacidad de la tabla
@@ -100,7 +100,8 @@ Pair * searchMap(HashMap * map,  char * key) {
             pos = -1;
         }
     }
-    
+
+    return NULL;
 }
 
 // 4. Implemente la función void eraseMap(HashMap * map, char * key). 
@@ -110,7 +111,7 @@ Pair * searchMap(HashMap * map,  char * key) {
 // Recuerde actualizar la variable size.
 
 void eraseMap(HashMap * map,  char * key) {    
-
+    
 
 }
 
