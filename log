@@ -582,3 +582,18 @@ Sun Apr 19 10:38:37 PM UTC 2026:
  tests:  13|2
 total_score: 40/60
 48ee6a1
+Sun Apr 19 11:31:59 PM UTC 2026: 
+ hashmap.c | 16 ++++++++++++----
+ 1 file changed, 12 insertions(+), 4 deletions(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:178:25: error: ‘capacity’ undeclared (first use in this function)
+  178 |     for(long pos; pos < capacity; pos++){
+      |                         ^~~~~~~~
+hashmap.c:178:25: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:180:62: error: ‘old_buckets’ is a pointer to pointer; did you mean to dereference it before applying ‘->’ to it?
+  180 |             insertMap(map, old_buckets[pos]->key, old_buckets->data);
+      |                                                              ^~
+      |                                                   (*         )
+34b3a7b
