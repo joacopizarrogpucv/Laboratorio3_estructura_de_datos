@@ -642,3 +642,17 @@ hashmap.c:181:67: error: ‘Pair’ has no member named ‘data’
   181 |             insertMap(map, old_buckets[pos]->key, old_buckets[pos]->data);
       |                                                                   ^~
 88c09dd
+Sun Apr 19 11:35:51 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:179:23: error: ‘pos’ is used uninitialized [-Werror=uninitialized]
+  179 |     for(long pos; pos < map->capacity; pos++){
+      |                   ~~~~^~~~~~~~~~~~~~~
+hashmap.c:179:14: note: ‘pos’ was declared here
+  179 |     for(long pos; pos < map->capacity; pos++){
+      |              ^~~
+cc1: all warnings being treated as errors
+181cabb
