@@ -482,3 +482,15 @@ hashmap.c:142:16: error: ‘HashMap’ {aka ‘struct HashMap’} has no member 
       |                ^~~~~~
       |                buckets
 23a5395
+Sun Apr 19 10:14:43 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:134:21: error: ‘key’ undeclared (first use in this function); did you mean ‘key_t’?
+  134 |     long pos = hash(key, map->capacity);
+      |                     ^~~
+      |                     key_t
+hashmap.c:134:21: note: each undeclared identifier is reported only once for each function it appears in
+925cb74

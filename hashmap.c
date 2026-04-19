@@ -139,7 +139,7 @@ Pair * firstMap(HashMap * map) {
             pos = -1;
         }
     }
-    while(map->bucket[pos] != NULL){
+    while(map->buckets[pos] != NULL){
         pos++;
     }
     return map->buckets[pos];
