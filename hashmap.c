@@ -132,10 +132,10 @@ void eraseMap(HashMap * map,  char * key) {
 
 Pair * firstMap(HashMap * map) {
     long pos = 0;
-    if (map->buckets[pos] != NULL || map->buckets[pos]->key != NULL){
+    if (map->buckets[pos] != NULL && map->buckets[pos]->key != NULL){
         return map->buckets[pos];
     }
-    while(map->buckets[pos] == NULL || map->buckets[pos]->key == NULL){
+    while(map->buckets[pos] == NULL && map->buckets[pos]->key == NULL){
         pos++;
         if(pos == map->capacity){
             pos = -1;
