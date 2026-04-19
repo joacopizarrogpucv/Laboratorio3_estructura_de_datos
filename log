@@ -443,3 +443,14 @@ Sun Apr 19 09:57:50 PM UTC 2026:
  tests:  11|2
 total_score: 40/60
 3dcc6e1
+Sun Apr 19 10:00:12 PM UTC 2026: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:134:10: error: unused variable ‘pos’ [-Werror=unused-variable]
+  134 |     long pos = 0;
+      |          ^~~
+cc1: all warnings being treated as errors
+4ab9ca4
