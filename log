@@ -466,3 +466,19 @@ Sun Apr 19 10:00:50 PM UTC 2026:
  tests:  12|2
 total_score: 40/60
 6fa7b9c
+Sun Apr 19 10:14:21 PM UTC 2026: 
+ hashmap.c | 12 +++++++++++-
+ 1 file changed, 11 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:134:21: error: ‘key’ undeclared (first use in this function); did you mean ‘key_t’?
+  134 |     long pos = hash(key, map->capacity);
+      |                     ^~~
+      |                     key_t
+hashmap.c:134:21: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:142:16: error: ‘HashMap’ {aka ‘struct HashMap’} has no member named ‘bucket’; did you mean ‘buckets’?
+  142 |     while(map->bucket[pos] != NULL){
+      |                ^~~~~~
+      |                buckets
+23a5395
