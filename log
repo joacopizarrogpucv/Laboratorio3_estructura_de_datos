@@ -632,3 +632,13 @@ hashmap.c:180:67: error: ‘Pair’ has no member named ‘data’
   180 |             insertMap(map, old_buckets[pos]->key, old_buckets[pos]->data);
       |                                                                   ^~
 839193f
+Sun Apr 19 11:35:33 PM UTC 2026: 
+ hashmap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:181:67: error: ‘Pair’ has no member named ‘data’
+  181 |             insertMap(map, old_buckets[pos]->key, old_buckets[pos]->data);
+      |                                                                   ^~
+88c09dd
