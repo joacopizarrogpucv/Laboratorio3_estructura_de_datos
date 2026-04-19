@@ -494,3 +494,9 @@ hashmap.c:134:21: error: ‘key’ undeclared (first use in this function); did 
       |                     key_t
 hashmap.c:134:21: note: each undeclared identifier is reported only once for each function it appears in
 925cb74
+Sun Apr 19 10:16:03 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  11|2
+total_score: 40/60
+e5ca0c1
